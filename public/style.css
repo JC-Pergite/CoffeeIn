@@ -1,0 +1,210 @@
+body {  
+  background: url(/images/main_pic.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.navi_container {
+	width: 100%;
+	height: 80px;
+	border-bottom: dashed 2pt #1B1817;
+	background-color: rgba(33, 48, 221, 0.19);
+}
+
+.center_container {
+	position: absolute;
+	margin-left: 160pt;
+	margin-top: 20pt;
+	width: 680px;
+	height: 470px;
+	background-color: rgba(20, 12, 10, 0.8); 
+}
+
+.orange_middle {
+	margin-left: 25pt;
+	margin-top: 26pt;
+	width: 610px;
+	height: 400px;
+	/*background-color: rgba(74, 43, 32, .3);*/
+	background-color: rgba(237, 160, 110, 0.5);
+}
+
+.hide_it {
+	position: relative;
+	z-index: -1;
+	bottom: 237px;
+	width: 610px;
+	height: 200px;
+	background-color: rgba(237, 160, 110, 0.5);
+}
+
+
+form.edit {
+	top: 500px;
+	position: absolute;
+}
+
+form.sign {
+	padding-top: 50px;
+	display: block;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	color: rgba(253, 234, 235, 0.8);
+	padding-left: 0;
+}
+
+form.login {
+	padding-top: 50px;
+	display: block;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	color: rgba(253, 234, 235, 0.8);
+	padding-left: 0;
+}
+
+::selection {
+	background-color: rgba(3, 20, 230, 0.3);
+}
+
+p::first-line {
+	font: bold 1.5em italic;
+	color: rgb(50, 31, 31);
+}
+
+p.posts {
+	width: 400px;
+	height: 240px;
+	font-family: courier;
+	color: rgba(253, 234, 235, 0.8);
+	margin-left: 100px;
+	margin-right: 20px;
+	font-size: 22px;
+	font-weight: 500;
+	vertical-align: center;
+	float: left;
+	display: inline-block;
+}
+
+p#categories {
+	margin-left: 10px;
+	margin-right: 0;
+	padding: 0 0;
+	display: block;
+}
+
+/*p { 
+	
+	display: inline-block;
+	width: 200px;
+	height: 120px;
+	margin-left: 100px;
+	margin-right: 20px;
+	font-size: 22px;
+	font-weight: 500;
+	vertical-align: center;
+	float: left;
+ }*/
+
+.update_content {
+	position: relative;
+}
+
+.required::after {
+	content: ' (Required) ';
+	color: maroon;
+	font-size: .8em;
+	font-style: italic;
+}
+
+div.row {
+	position: relative;
+	padding-top: 10px;
+	margin-bottom: 1pt;
+	margin-left: 22px;
+	width: 350px;
+	height: 75px;
+	vertical-align: top;
+	text-indent: 2pt;
+	border: dashed 3px rgba(237, 160, 110, 0.5);
+  	color: #F7F7F7;
+  	background-color: rgba(33, 48, 221, 0.17)
+}
+
+.submit_content {
+	display: -webkit-inline-flex;
+	text-align: center;
+}
+
+input[type="submit"] {
+	flex: 0 0 110px;
+}
+
+input[id="sign"] {
+	background: #5030CE;
+	color: whitesmoke;
+	border-radius: 25px;
+	float: right;
+}
+
+.pulse {
+	-webkit-animation: pulse 500ms;
+	-webkit-animation-fill-mode: backwards;
+}
+
+input[id="login"] {
+	background: #5030CE;
+	color: whitesmoke;
+	border-radius: 25px;
+	margin-right: 8px;
+	padding-right: 15px;
+	float: right;
+}
+
+label[for="title"] {
+	padding-left: 21px;
+}
+
+h1.nav {
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-size: 2em;
+	height: 10px;
+	padding-top: 10px;
+	padding-left: 45px;
+	color: rgba(253, 234, 235, 0.92)
+}
+
+h2.nav {
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-size: 1.5em;
+	font-style: italic;
+	padding-left: 55px;
+	color: rgba(253, 234, 235, 1); 
+}
+
+h3.flash {
+	font-family: courier;
+	text-align: center;
+	font-size: 2.2em;
+	padding-top: 165px;
+	background-color: rgba(237, 160, 110, 0.55);
+}
+
+h3.secret {
+	font-family: courier;
+	text-align: center;
+	font-size: 2.5em;
+	padding-top: 80px;
+	color: rgb(24, 21, 21);
+	opacity: .5;
+	background-color: rgba(237, 160, 110, 0.55);
+}
+
+.flash {
+	-webkit-animation: flash 5.2s linear infinite;
+}
+
+@-webkit-keyframes "flash" {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+}

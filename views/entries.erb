@@ -1,0 +1,32 @@
+<!-- <h1>Caffeine Contribution Accepted. Thanks! </h1>
+ -->
+<div class="center_container">
+	<div class="orange_middle">
+		<h2><%= @this_article['title'] %></h2>
+			<p class="posts">
+			  <%= @this_article['content'] %>
+			</p>
+			<p>
+				<%= @this_article['dates'] %>
+			</p>
+	</div>
+</div>
+<div class="update_content">
+	<form action="/category/article/<%= @this_article['id'] %>" method="post" class="edit">
+		<input type="hidden" name="_method" value="put" />
+		<div class="row">
+			<label for="title">Title: </label>
+			<input type="text" name="title" value="<%= @this_article['title'] %>" autofocus/>
+	
+  		<div class="update_content">
+  			<label for="content">Content: </label>
+  			<textarea name="content" value="<%= @this_article['content'] %>"></textarea>
+  		</div>
+    </div>
+
+		<div class="submit_content">
+			<input type="submit" value="Update" />
+		</div>
+	</form>
+</div>
+

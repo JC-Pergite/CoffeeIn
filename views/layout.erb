@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CoffeeIn</title>
+	<script src="/scripts/jquery-1.11.3.min.js"></script>
+  	<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<nav>
+	<div class="navi_container">
+		<h1 class="nav">CoffeeIn - your wired caffeine guide</h1>
+		<h2 class="nav">CoffeeIn for good Caffeine</h2>
+    <a href ="/signup"><input type="submit" value="Sign Up" id="sign" class="pulse"></a>
+    <a href ="/login"><input type="submit" value="Log In!" id="login" class="pulse"></a>
+
+    <!-- <form action="/search" method="get">
+   <input id="searching" type="text" name="search" placeholder="Coffee Search!" />   
+   <input type="submit" value />
+  </form -->>
+</nav>  
+
+	 	<%= yield %>
+
+
+  <script src="/scripts/wiki.js"></script>
+</body>
+</html>
