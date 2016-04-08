@@ -6,7 +6,6 @@ body {
   background-size: cover;
 }
 
-
 .navi_container {
 	width: 100%;
 	height: 80px;
@@ -28,7 +27,6 @@ body {
 	margin-top: 26pt;
 	width: 610px;
 	height: 400px;
-	/*background-color: rgba(74, 43, 32, .3);*/
 	background-color: rgba(237, 160, 110, 0.5);
 }
 
@@ -41,7 +39,6 @@ body {
 	background-color: rgba(237, 160, 110, 0.5);
 }
 
-
 form.edit {
 	top: 500px;
 	position: absolute;
@@ -50,17 +47,16 @@ form.edit {
 form.sign {
 	padding-top: 50px;
 	display: block;
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: rgba(253, 234, 235, 0.8);
 	padding-left: 0;
 }
 
 form.login {
-	padding-top: 50px;
+	padding-top: 70pt;
 	display: block;
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: rgba(253, 234, 235, 0.8);
-	padding-left: 0;
 }
 
 ::selection {
@@ -93,28 +89,8 @@ p#categories {
 	display: block;
 }
 
-/*p { 
-	
-	display: inline-block;
-	width: 200px;
-	height: 120px;
-	margin-left: 100px;
-	margin-right: 20px;
-	font-size: 22px;
-	font-weight: 500;
-	vertical-align: center;
-	float: left;
- }*/
-
 .update_content {
 	position: relative;
-}
-
-.required::after {
-	content: ' (Required) ';
-	color: maroon;
-	font-size: .8em;
-	font-style: italic;
 }
 
 div.row {
@@ -137,7 +113,7 @@ div.row {
 }
 
 input[type="submit"] {
-	flex: 0 0 110px;
+	-flex: 0 0 110px;
 }
 
 input[id="sign"] {
@@ -145,11 +121,6 @@ input[id="sign"] {
 	color: whitesmoke;
 	border-radius: 25px;
 	float: right;
-}
-
-.pulse {
-	-webkit-animation: pulse 500ms;
-	-webkit-animation-fill-mode: backwards;
 }
 
 input[id="login"] {
@@ -163,10 +134,18 @@ input[id="login"] {
 
 label[for="title"] {
 	padding-left: 21px;
+	margin-left: 20pt;
+}
+
+input[id="category"] {
+	background: whitesmoke;
+	font-weight: 700;
+	color: #5030CE;
+	border-radius: 25px;
 }
 
 h1.nav {
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 2em;
 	height: 10px;
 	padding-top: 10px;
@@ -175,7 +154,7 @@ h1.nav {
 }
 
 h2.nav {
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 1.5em;
 	font-style: italic;
 	padding-left: 55px;
@@ -198,6 +177,21 @@ h3.secret {
 	color: rgb(24, 21, 21);
 	opacity: .5;
 	background-color: rgba(237, 160, 110, 0.55);
+}
+
+h2.location {
+	color: rgb(50, 31, 31);
+	font-size: 2em;
+	font-style: italic;
+	text-align: center;
+	padding-top: 10pt;
+	margin-bottom: 0;
+}
+
+h4 {
+	color: rgb(50, 31, 31);
+	font-style: italic;
+	text-align: center;
 }
 
 .flash {

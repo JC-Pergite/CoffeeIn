@@ -87,7 +87,6 @@ module Portfolio
     end
 
     get '/category/article/:id/?' do
-      # binding.pry
       db = db_connect
       @title = params['title']
       @content = params['content']
@@ -97,20 +96,15 @@ module Portfolio
       erb :entries
     end
 
-
-
     put '/category/article/:id/?' do
-      # binding.pry 
       db = db_connect
       @title = params['title']
       @content = params['content']
       @id = params['id']
       @this_article = db.exec_params("SELECT title, content FROM article WHERE id = #{@id}").first
     
-      db.exec_params("UPDATE article SET title = $1  WHERE id = $2", [@title, @id])
+      db.exec_params("UPDATE article SET title = $1, content = $2  WHERE id = $3", [@title, @content, @id])
       redirect back
     end
-
-    
   end
 end
